@@ -11,6 +11,20 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%# Header %>
+    <header>
+      <%= link_to "Top", root_path %>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <%# Footer %>
+    <footer>
+      <%= link_to "About", about_path %>
+      <%= link_to "Policy", policy_path %>
+      <%= link_to "Terms", terms_path %>
+    </footer>
   </body>
 </html>
