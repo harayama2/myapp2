@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     root "dashboard#show", as: :user_root
   end
 
+  resources :posts
+
   get "about" => "static#about"
   get "policy" => "static#policy"
   get "terms" => "static#terms"
