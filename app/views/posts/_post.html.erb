@@ -19,4 +19,7 @@
     <%= post.body %>
   </p>
 
+  <div id="<%= dom_id(post, :bookmark) %>">
+    <%= render "bookmarks/bookmark", post: post %>
+  </div>
 </div>
